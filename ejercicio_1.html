@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1 / SEGUNDO TALLER FULL STACK</title>
+</head>
+<body>
+
+
+    <!------------------------------------ EJERCICIO #1 ----------------------------------------------- -->
+
+    <div id="controles">
+        <video width="520" height="440" id="video1" src="imagenes/BienvenidaBYWStore.mp4" controls></video>
+
+        <div id="botones">
+            <tr>
+                <td><button onclick="play()"> &#9658; </button></td>
+                <td><button onclick="stop()">&#9726;</button></td>
+                <td><button onclick="adeltAtrasar(-10)">&lt;&lt;</button></td>
+                <td><button onclick="adeltAtrasar(10)">&gt;&gt;</button></td>
+                <td><button onclick="volumeUp()">+</button></td>
+                <td><button onclick="volumeDown(-3)">-</button></td>
+                <td><button onclick="mute()">Mute on</button></td>
+                <td><button onclick="inMute()">Mute off</button></td>
+            </tr>
+        </div>
+    </div>
+
+
+    <script>
+        /* --------------------------------- EJERCICIO #1: -----------------------------------------------*/
+        var video = document.getElementById("video1");
+        function play() {
+            video.play();
+        }
+        function stop() {
+            video.pause();
+        }
+        function adeltAtrasar(value) {
+            video.currentTime += value;
+        }
+        function volumeUp() {
+            video.volume += 0.1;
+        }
+        function volumeDown() {
+            video.volume -= 0.1;
+        }
+        function mute() {
+            video.muted = true;
+        }
+        function inMute() {
+            video.muted = false;
+        }
+       
+        let controles = document.getElementById('controles');
+        controles.style.background = "lightblue";
+        controles.style.width = "600px";
+        controles.style.height = "500px";
+        controles.style.textAlign = "center";
+        controles.style.padding = "20px";
+        controles.style.marginLeft = "400px";
+        controles.style.marginTop = "100px";
+
+        let botones = document.getElementById('botones');
+        botones.style.padding = "20px";
+  
+    </script>
+</body>
+</html>

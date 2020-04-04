@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 3 / SEGUNDO TALLER FULL STACK</title>
+</head>
+<style>
+    /* ------------------------------ STYLE EJERCICIO #3 -----------------------------------------------
+*/
+    div {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    }
+
+.blue {
+    background-color: blue;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.black{
+    background-color: black;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.violet{
+    background-color: violet;
+}
+</style>
+    <!----------------------------------- EJERCICIO #3 ----------------------------------------------- -->
+
+<body id="cuerpo">
+<div class="blue" onmouseover="fondo1()"></div>
+<div class="aqua" onmouseover="fondo2()"></div>
+<div class="black" onmouseover="fondo3()"></div>
+<div class="gold" onmouseover="fondo4()"></div>
+<div class="violet" onmouseover="fondo5()"></div>
+
+    <script>
+        /* ----------------------------------------- EJERCICIO #3: ----------------------------------------------------
+PAGINA QUE MUESTRE 5 CUADRADOS DE DIFERENTES COLORES, CUANDO EL MOUSE PASE POR ENCIMA ESE DEBE SER EL BACKGROUND  */
+
+function fondo1(){
+    document.getElementById("cuerpo").style.backgroundColor = "blue";
+}
+
+function fondo2(){
+    document.getElementById("cuerpo").style.backgroundColor = "aqua";
+}
+
+function fondo3(){
+    document.getElementById("cuerpo").style.backgroundColor = "black";
+}
+
+function fondo4(){
+    document.getElementById("cuerpo").style.backgroundColor = "gold";
+}
+
+function fondo5(){
+    document.getElementById("cuerpo").style.backgroundColor = "violet";
+}
+
+    </script>
+</body>
+</html>

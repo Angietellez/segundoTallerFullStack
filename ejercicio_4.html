@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4 / SEGUNDO TALLER FULL STACK</title>
+</head>
+<style>
+    body {
+        background-color: lightsteelblue;
+    }
+
+#foto{
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+    button{
+        width: 100px;
+        height: 80px;
+        border-radius: 30px;
+        background-color:lightgrey;
+        border: solid 2px lightslategrey;
+    }
+
+    #container{
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 5%;
+    }
+</style>
+<body>
+
+        <!----------------------------------- EJERCICIO #4 -------------------------------------------------> 
+<div id="container">
+<img id="foto" src="imagenes/playa-en-el-paraiso.jpg" height="200" width="250" alt="playa"> <br>
+<button onclick="zoomMas()"><img src="imagenes/zoom_mas.png" alt="Aumentar zoom" height="100%" width="100%"></button>
+<button onclick="zoomMenos()"><img src="imagenes/zoom_menos.png" alt="Disminuir zoom" height="100%" width="100%"></button>
+
+</div>
+
+
+
+    <script>
+        /* ----------------------------------------- EJERCICIO #4: ----------------------------------------------------
+POR MEDIO DE JS CREAU UN EFECTO ZOOM IN Y ZOOM OUT A UNA IMAGEN, CONTROLADO POR UN BOTON Y DEBE TENER TRANSICION SUAVE 
+  
+
+   // No logro que el contador se detenga  :(
+
+
+
+var width = 250;
+var height = 200;
+cont = 0;
+function zomMas(){
+  
+    cont ++;
+    width +=10;
+    height +=10;
+var aumentarAncho = width + "px";
+var aumentarAlto = height + "px";
+
+console.log(zomMas);
+document.getElementById('foto').style.width = aumentarAncho;
+document.getElementById('foto').style.height = aumentarAlto;
+
+    if(cont == 6){
+        clearInterval(intervalo); 
+    }
+}
+intervalo = setInterval(zomMas, 1000);
+
+
+function zoomMenos(){
+  
+  cont ++;
+  width -=10;
+  height -=10;
+var disminuirAncho = width - "px";
+var disminuirAlto = height - "px";
+
+document.getElementById('foto').style.width = disminuirAncho;
+document.getElementById('foto').style.height = disminuirAlto;
+console.log(zoomMenos);
+  if(cont == 6){
+      clearInterval(intervalo); 
+  }
+}
+intervalo = setInterval(zoomMenos, 1000);
+ */ 
+    </script>
+</body>
+</html>
